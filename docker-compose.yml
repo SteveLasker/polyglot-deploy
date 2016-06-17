@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  web-node:
+    image:
+      weidazhao/web-node:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - api-dotnet
+  api-dotnet:
+    image:
+      weidazhao/api-dotnet:latest
+    ports:
+      - "5000:5000"
