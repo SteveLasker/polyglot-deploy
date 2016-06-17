@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The authentication part is just a PoC.
-ssh-agent-id = eval `ssh-agent` | awk '{print $3}'
+ssh-agent-id=$(eval `ssh-agent` | awk '{print $3}')
 ssh-add $ACS_SSHKEY
 
 scp -P 2200 $(pwd)/docker-compose.yml $ACS_MASTER0:~/polyglot/docker-compose.yml
