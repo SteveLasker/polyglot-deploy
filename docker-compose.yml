@@ -3,13 +3,13 @@ version: '2'
 services:
   web-node:
     image:
-      weidazhao/web-node:latest
+      stevelasker/web-node:latest
     ports:
-      - "80:80"
+      - "8080:8080"
     depends_on:
       - api-dotnet
   api-dotnet:
     image:
-      weidazhao/api-dotnet:latest
+      stevelasker/api-dotnet:latest
     ports:
       - "5000:5000"
