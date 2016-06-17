@@ -5,7 +5,7 @@ services:
     image:
       stevelasker/web-node:latest
     ports:
-      - "8080:8080"
+      - "8080:80"
     depends_on:
       - api-dotnet
   api-dotnet:
