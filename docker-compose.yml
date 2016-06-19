@@ -5,7 +5,10 @@ services:
     image:
       stevelasker/web-node:latest
     ports:
-      - "8080:80"
+      - "8080:3000"
+    environment:
+      - HTTPPORT=3000
+      - APIPORT=5000
     depends_on:
       - api-dotnet
   api-dotnet:
