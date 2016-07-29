@@ -9,7 +9,7 @@ services:
     environment:
       - HTTPPORT=3000
       - APIURL=api-dotnet
-      - APIPORT=5000
+      - APIPORT=80
     depends_on:
       - api-dotnet
   api-dotnet:
