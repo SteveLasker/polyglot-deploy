@@ -5,7 +5,7 @@ services:
     image:
       stevelasker/web-node:latest
     ports:
-      - "80:3000"
+      - "8080:3000"
     environment:
       - HTTPPORT=3000
       - APIURL=api-dotnet
